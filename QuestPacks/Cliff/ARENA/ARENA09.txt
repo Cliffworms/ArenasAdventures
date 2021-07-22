@@ -1,0 +1,283 @@
+Quest: ARENA09
+DisplayName: Noble Rescue
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    Ah, you're %pcn. I will speak with you, for
+<ce>                    my city needs help. We must rescue a relative of mine.
+<ce>                    I have heard you have sufficient experience. Are you
+<ce>                    interested?
+<--->
+<ce>                    I bid you welcome to our city, %pcn. I need a
+<ce>                    person who can rescue someone close to me, held prisoner
+<ce>                    in a terrible dungeon. In return, you will be rewarded
+<ce>                    beyond your most avaricious dreams. Do we have a deal?
+<--->
+<ce>                    I hope you are looking for work because I need to find
+<ce>                    someone who can do the job right. I am a generous
+<ce>                    noble, and you will be more than fairly paid if you
+<ce>                    would rescue a relative of mine. Will you help me?
+
+RefuseQuest:  [1001]
+<ce>                    I understand. There would be some risks in
+<ce>                    accepting my quest and that naturally makes
+<ce>                    you nervous. Very well, %ra. You will
+<ce>                    forgive me if I do not walk you to the door.
+<ce>                    Goodbye.
+<--->
+<ce>                    What a pity. I will have to find another
+<ce>                    champion. Good day, %pcn.
+<ce>                    I wish you well.
+<--->
+<ce>                    Well, I am not particularly surprised that you
+<ce>                    refuse this possible adventure, for I have
+<ce>                    heard that young %ra people like you are
+<ce>                    notoriously unambitious. I hope you are able to
+<ce>                    do something of some value elsewhere.
+<ce>                    Leave me now.
+<--->
+<ce>                    Very well, I cannot force you to accept my plea.
+<ce>                    I hope all goes well on your travels, and you
+<ce>                    return to %cn someday. Now, you may go.
+<ce>                    I will find someone else eager to help the %rt
+<ce>                    and become rich. Fare you well.
+<--->
+<ce>                    I am disappointed, but I understand that a young
+<ce>                    adventurer's schedule is hard to break. I see
+<ce>                    you are doing well now. I hope good fortune
+<ce>                    smiles upon your efforts...
+<--->
+<ce>                    I suppose I cannot talk you into it. Perhaps
+<ce>                    there is another who will accept the risks
+<ce>                    in return for wealth and fame. Farewell, %ra.
+<--->
+<ce>                    I had hoped you would be interested but there
+<ce>                    are others who would gladly welcome the chance
+<ce>                    to fill their purses. I thank you but must
+<ce>                    turn my attention to other matters. Good luck
+<ce>                    on your travels.
+<--->
+<ce>                    You would deny a pleading member of the
+<ce>                    %reg royal family a small request such
+<ce>                    as this! Away with you then, for I have
+<ce>                    more important matters to consider than
+<ce>                    some amateur %ra adventurer. Begone! 
+
+AcceptQuest:  [1002]
+<ce>                    A terrible fate has befallen _dummy_, a close relative.
+<ce>                    I think %g has been taken by one of %reg's
+<ce>                    enemies and secreted in a dungeon in the region. The
+<ce>                    place's name is ___location_. Should you
+<ce>                    save my relative, I will reward you with _reward_ gold.
+<ce>                    Be careful however, I'm sure that _dummy_'s captors
+<ce>                    will try and stop you. You must have %g2 back before
+<ce>                    =timer_ days have passed, or my people will notice %g3
+<ce>                    absence. I cannot allow that. Hurry, and good luck!
+<--->
+<ce>                    _dummy_, my beloved cousin's child, a gentle soul
+<ce>                    unused to the cruelties of the world, has
+<ce>                    disappeared. I know that the forces of a neighboring
+<ce>                    region are responsible, and my poor relative is
+<ce>                    probably in ___location_, a dungeon in
+<ce>                    the region. This affair could not have happened at a
+<ce>                    worse time. You see, %g is due to be married to an
+<ce>                    important political ally in =timer_ days. I must have
+<ce>                    _dummy_ back by then or there will be chaos. It will
+<ce>                    not be easy for you to get back in time, for even if
+<ce>                    my enemies know not of my intentions of rescue,
+<ce>                    ___location_ is notoriously well-defended.
+<ce>                    You shall be paid _reward_ gold for the child's safe
+<ce>                    return. Akatosh's speed, %ra.
+<--->
+<ce>                    _dummy_, my cousin's child, missing for days, has
+<ce>                    finally been located in the infernal pit known as
+<ce>                    ___location_. I think %g is the prisoner of a rival
+<ce>                    of mine there. I need you to use your every talent
+<ce>                    to complete the rescue in no more than =timer_ days.
+<ce>                    After that I will send someone else and your reward
+<ce>                    of _reward_ gold will be forfeit. I take it you realize
+<ce>                    the strength of my rival and you feel you are capable?
+<ce>                    Of course you do. Save _dummy_, %ra.
+<ce>                    The Divines be with you.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    _dummy_, my beloved cousin's child, free at last
+<ce>                    from %reg's enemies. Good %pcf, you have made
+<ce>                    my heart glad indeed. Here are _reward_ gold pieces,
+<ce>                    as I promised. May %god smile upon you and grant
+<ce>                    you happiness.
+<--->
+<ce>                    You have rescued my cousin's child from %reg's enemies,
+<ce>                    and my gratitude to you is enormous. Please accept the
+<ce>                    _reward_ gold pieces as a token of the debt I owe.
+<ce>                    Good luck in your travels. You will be remembered
+<ce>                    in %cn.
+<--->
+<ce>                    My heart is full of gratitude to you. I feared I would never see
+<ce>                    my cousin's child again. In addition to your reward of _reward_ gold,
+<ce>                    I have ordered my scribes to write you into the tomes of %cn,
+<ce>                    so you will never be forgotten. Bless you, good %ra.
+
+RumorsDuringQuest:   [1005]
+I heard that some lord in a village angered his patron spirit this week. The local shaman forsees a plague over all the province within the month.
+<--->
+They say Morrowind is doomed to wither away from plague and pestilence this year or next. My opinion is good riddance.
+<--->
+Some friends of mine went out searching for the Staff of Magnus, but they disappeared. The fools.
+
+RumorsPostSuccess:   [1007]
+Did you know %reg's enemies kidnapped the child of _questgiver_'s cousin? _dummy_'s back in ___questgiver_ now, but apparently the child was gone for weeks! Can you believe they kept that a secret?
+<--->
+Big scandal at the palace, young %ra. It seems a close relative of ___questgiver_'s ruler had been kidnapped, for weeks maybe, and the _questgiver_ did nothing but send some mercenary after the kid. Can you imagine?
+<--->
+Apparently, the ruler of ___questgiver_'s cousin or child or something is back from ___location_, some health spa in the country. They say the relative's lost a lot of weight. That's good, I suppose.
+<--->
+Some %ra rescued the child of _questgiver_'s cousin from some horrible place called ___location_. No one in town even realized _dummy_ was gone, let alone kidnapped by %reg's enemies . Weird, eh?
+<--->
+Listen to this. Some relative of ___questgiver_'s noble family was kidnapped by %reg's enemies  and imprisoned in ___location_ and what does that ruler do? Orders some poor, stupid %ra kid to get the relative back. The palace's in an uproar.
+
+QuestorPostsuccess:  [1008]
+<ce>            My noble family shall never forget your brave rescue of _dummy_. Ask, and I shall answer.
+
+QuestorPostfailure:  [1009]
+<ce>            When I saw my dear _dummy_ walk out of the wilderness and through the city gates, I ran to ask where you were, you who had rescued %g2. Imagine my surprise when %g said %g had never seen you at all, let alone been rescued by you. That constitutes mission failure, young %ra. Pathetic.
+
+
+Message: 1010
+<ce>%qdt
+I have been hired by _questgiver_, a noble from
+___questgiver_'s palace, to rescue _dummy_ who
+is imprisoned in ___location_.
+I must bring %g2 in ___questgiver_ in
+=timer_ days to earn the _reward_ gold reward.
+
+Message: 1020
+<ce>            _dummy_ thanks you for your assistance and leaves you,
+<ce>            figuring %g has a better chance making it to ___questgiver_
+<ce>            alone.
+
+Message: 1025
+<ce>            It has been more than =timer_ days since you were hired
+<ce>            to rescue _dummy_ from ___location_.
+<ce>            By now, the child of _questgiver_'s cousin is
+<ce>            probably dead, lost or moved somewhere else.
+
+Message: 1030
+<ce>            Ah, good to see you again, %pcn. Are you well? My dear
+<ce>            _dummy_ is grateful for the meager assistance you gave
+<ce>            %g2 in escaping ___location_. You know %g returned to
+<ce>            my palace only hours ago, of course. Had you returned
+<ce>            my cousin's child yourself, I would have given you
+<ce>            your reward. As it is, that would be absurd. Farewell.
+<--->
+<ce>            Interesting rescuing procedure. My cousin's child arrived
+<ce>            a little while ago, worn and bedraggled from a long
+<ce>            journey by foot. I cannot say that you did nothing to
+<ce>            rescue _dummy_, but obviously not enough to merit your
+<ce>            reward. Be off with you.
+<--->
+<ce>            When I saw my dear _dummy_ walk out of the wilderness and
+<ce>            through the city gates, I ran to ask where you were, you
+<ce>            who had rescued %g2. Imagine my surprise when %g said %g
+<ce>            had never seen you at all, let alone been rescued by you.
+<ce>            That constitutes mission failure, young %ra, and that
+<ce>            means no reward. Goodbye.
+
+Message: 1040
+<ce>            %oth, a rescuer from _questgiver_! Hurry,
+<ce>            I must be home in ___questgiver_ as soon as possible!
+
+Message: 1050
+<ce>                    These fighters were obviously sent by
+<ce>                    %reg's enemies to stop you, for their
+<ce>                    family colors are borne with pride.
+<--->
+<ce>                    The group blocking your path is at the
+<ce>                    service of another. One of
+<ce>                    %reg's enemies seem the obvious
+<ce>                    master, if they truly wish for your
+<ce>                    quest to fail.
+<--->
+<ce>                    The colors borne by this hostile group
+<ce>                    are those of %reg's enemies.
+<ce>                    It would seem the rumors of their
+<ce>                    interest in aborting your quest are true.
+<--->
+<ce>                    The occasional wandering band is not an
+<ce>                    unusual sight, but one bearing the colors
+<ce>                    of %reg's enemies is strange
+<ce>                    indeed. It is evident that they really
+<ce>                    must want you dead.
+<--->
+<ce>                    You might assume this to be a chance
+<ce>                    encounter with a hostile warrior, but not
+<ce>                    one carrying the colors of
+<ce>                    %reg's enemies. The rumors of
+<ce>                    their involvment in you quest are apparently
+<ce>                    true.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+Person _dummy_ group Banker
+
+Foe _agent1_ is Knight
+Foe _agent2_ is Knight
+
+Place _location_ remote dungeon2
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _end_ 7.00:00
+
+--	Quest start-up:
+    log 1010 step 0
+	start timer _timer_
+    reveal _location_
+    place npc _dummy_ at _location_
+
+_dummyclicked_ task:
+    clicked npc _dummy_ say 1040
+    add _dummy_ face
+    hide npc _dummy_
+
+_attack_ task:
+    when _dummyclicked_
+    create foe _agent1_ every 60 minutes 2 times with 100% success msg 1050
+    create foe _agent2_ every 60 minutes 2 times with 100% success    
+
+_qgclicked_ task:
+    clicked npc _questgiver_ 
+
+_success_ task:
+    when _qgclicked_ and _dummyclicked_ and not _timer_
+    give pc _reward_
+    end quest
+
+_qgangry_ task:
+    when _qgclicked_ and _timer_ and not _success_
+    say 1030
+    end quest
+
+_clearclick_ task:
+    when _qgclicked_ and not _dummyclicked_ and not _timer_
+    clear _qgclicked_ _clearclick_     
+
+_timer_ task:
+    start timer _end_
+
+_fail1_ task:
+    when _timer_ and not _dummyclicked_
+    say 1025
+
+_fail2_ task:
+    when _timer_ and _dummyclicked_
+    drop _dummy_ face
+    say 1020
+
+_end_ task:
+    end quest

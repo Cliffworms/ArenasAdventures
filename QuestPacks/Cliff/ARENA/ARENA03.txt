@@ -1,0 +1,151 @@
+Quest: ARENA03
+DisplayName: Cousin Escort
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    You're precisely the sort of %ra
+<ce>                    I've been looking to escort my cousin
+<ce>                    across %reg. Of course, you will
+<ce>                    be paid. Will you agree to help me?
+<--->
+<ce>                    Good day. I'm having a little problem I
+<ce>                    hoped you'd be able to solve. I have a
+<ce>                    relative who needs to be escorted to some
+<ce>                    place here in %reg. Payment in gold.
+<ce>                    The usual. Do you have free time, %ra?
+<--->
+<ce>                    Sorry for disturbing you but I was hoping you
+<ce>                    might be on your way out of %cn. You see, I
+<ce>                    have a cousin who needs to be escorted out of
+<ce>                    here. I'd do it myself but I have an injury to
+<ce>                    my sword arm and I wouldn't be able to defend
+<ce>                    us if there was any trouble. Will you agree to
+<ce>                    escort my cousin?
+
+RefuseQuest:  [1001]
+<ce>                    Won't even consider it, eh? To be
+<ce>                    expected, I suppose. I've always heard
+<ce>                    that your typical %ra is a lazy,
+<ce>                    stupid, stinking pile of Orc dung. No
+<ce>                    hard feelings.
+<--->
+<ce>                    I understand. Thanks anyway. And, by the
+<ce>                    way, if you tell anyone what I just told
+<ce>                    you, I'll pull your teeth out by way of
+<ce>                    your neck. Have a nice day.
+<--->
+<ce>                    Really? You won't help me? Then do me one
+<ce>                    favor: don't let anyone know what I talked
+<ce>                    to you about. Goodbye
+
+AcceptQuest:  [1002]
+<ce>                    Thank you, %pcn. My mind is much eased.
+<ce>                    I know it's probably out of your way but if you
+<ce>                    can get _dummy_ to __location_
+<ce>                    in  =timer_ days you'll at least be _reward_ gold
+<ce>                    richer. _dummy_ will see to it that my contact,
+<ce>                    _contact_, at _location_ will pay.
+<ce>                    Good luck to both of you.
+<--->
+<ce>                    %god, the good spirits must have delivered you indeed.
+<ce>                    For reasons of business, _dummy_, that's my cousin,
+<ce>                    needs to get to __location_ in =timer_ days.
+<ce>                    I had a couple of swordsmen hired to get %g2 there, but
+<ce>                    they wound up dead a few days ago, chopped into goblin
+<ce>                    snacks by Orc raiders. I was going to have my contact,
+<ce>                    _contact_, in at _location_ pay
+<ce>                    them _reward_ gold. That money's yours if you take their
+<ce>                    place. I'm relying on you, %pcn,
+<ce>                    do not let me down.
+<--->
+<ce>                    You are my savior, good %ra. I have a friend in
+<ce>                    _location_, _contact_, willing to pay up to
+<ce>                    _reward_ septims if you can get my cousin at
+<ce>                    __location_ in =timer_ days. Safe travels,
+<ce>                    _dummy_, and good luck.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    Good to see you, _dummy_. I can see %pcn
+<ce>                    protected you well against the annoyances of %reg
+<ce>                    and has deserved the _reward_ septims. Goodbye, mighty %ra.        
+<--->
+<ce>                    Good day to you, _dummy_, and to you, %ra.
+<ce>                    I'm pleased you have taken such good care of
+<ce>                    _questgiver_'s cousin. Your _reward_ gold pieces
+<ce>                    is well deserved. Enjoy it and fare you well.
+<--->
+<ce>                    Remarkable job, I don't know if I could've survived
+<ce>                    that long with _dummy_. But then, _questgiver_'s
+<ce>                    cousin has always annoyed me greatly. Here is your _reward_ drakes.
+<ce>                    I bid you well.
+
+RumorsDuringQuest:   [1005]
+I'd ask someone else with a better ear.
+<--->
+Just business as usual in %cn, I guess.
+<--->
+There's probably something going on elsewhere in %reg, but not here in %cn.
+
+QuestorPostsuccess:  [1008]
+<ce>            %pcn, you remember my cousin? _dummy_? Well, %g sends %g3 thanks to you.
+
+QuestorPostfailure:  [1009]
+<ce>            I have nightmares at night, %pcn. _dummy_ never met up with _contact_. Probably lost to wild animals due to your incompetence.
+
+Message: 1010
+<ce>%qdt
+_questgiver_ in ___questgiver_ hired me to
+escort %g3 cousin, _dummy_,
+to _location_ in __location_.
+I must bring %g2 to _contact_ in =timer_ days.
+
+Message: 1020
+<ce>            _dummy_ says :
+<ce>            "Listen, I know my way from here.
+<ce>            Thanks for your help, %pcn."
+<ce>
+<ce>            _dummy_ hurries away.
+<--->
+<ce>            "I don't even know why I needed an
+<ce>            escort in the first place."
+<ce>
+<ce>            _dummy_ waves goodbye and leaves,
+<ce>            figuring %g can find %g3 own way.
+<--->
+<ce>            _dummy_ says %g knows the way to
+<ce>            _location_ in __location_ from
+<ce>            here and leaves you, heading %di.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+Person _dummy_ group Resident1
+Person _contact_ group Innkeeper
+
+Place _location_ remote random
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    place npc _contact_ at _location_
+    add _dummy_ face
+
+_contactclicked_ task:
+    clicked npc _contact_
+
+_escort_ task:
+    when _contactclicked_
+    give pc _reward_
+    end quest
+    
+_timer_ task:
+    say 1020
+    end quest

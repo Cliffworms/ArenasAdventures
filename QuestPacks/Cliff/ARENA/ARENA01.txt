@@ -1,0 +1,147 @@
+Quest: ARENA01
+DisplayName: Delivery For a Commoner
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    I need your help. If my
+<ce>                    delivery doesn't make it in
+<ce>                    time, I'll be in trouble. 
+<ce>                    Can you help me? I'm desperate.
+<--->
+<ce>                    Greetings, I've been informed
+<ce>                    of your presence in town. They
+<ce>                    tell me you're called %pcn.
+<ce>                    If you're as tough as you look,
+<ce>                    I know a way for you to get a
+<ce>                    quick amount of gold. I need
+<ce>                    something delivered so, do we
+<ce>                    got a deal?
+<--->
+<ce>                    Lend me your ear for a moment, %ra.
+<ce>                    For reasons of utmost importance to
+<ce>                    the welfare of %cn, it is
+<ce>                    imperative that I have this packaged
+<ce>                    delivered. Will you help me and
+<ce>                    %cn?
+
+
+
+
+RefuseQuest:  [1001]
+<ce>                    Won't even consider it, eh? To be
+<ce>                    expected, I suppose. I've always heard
+<ce>                    that your typical %ra is a lazy,
+<ce>                    stupid, stinking pile of Orc dung. No
+<ce>                    hard feelings.
+<--->
+<ce>                    I understand. Thanks anyway. And, by the
+<ce>                    way, if you tell anyone what I just told
+<ce>                    you, I'll pull your teeth out by way of
+<ce>                    your neck. Have a nice day.
+<--->
+<ce>                    Really? You won't help me? Then do me one
+<ce>                    favor: don't let anyone know what I talked
+<ce>                    to you about. Goodbye
+
+AcceptQuest:  [1002]
+<ce>                    Thank you, %pcn. My mind is much eased.
+<ce>                    If this sack isn't at _location_
+<ce>                    in __location_ in =timer_ days,
+<ce>                    my life ain't going to be worth a copper.
+<ce>                    _dummy_'ll be there to take the
+<ce>                    sack if you're there on time, and I'm sure
+<ce>                    %g'll give you _reward_ gold for it.
+<ce>                    Good luck to you, good %ra.
+<--->
+<ce>                    %god, the good spirits must have delivered
+<ce>                    you indeed. This sack I have was supposed to
+<ce>                    be at _location_ in __location_
+<ce>                    days ago and if it ain't there by =timer_ days,
+<ce>                    things could get real nasty. _dummy_
+<ce>                    there will pay you _reward_ drakes if you're at
+<ce>                    _location_ in time. I'm relying on you, %pcn,
+<ce>                    do not let me down.
+<--->
+<ce>                    You are my savior, good %ra. Take this sack
+<ce>                    and take it to _location_ in __location_
+<ce>                    before =timer_ days. I have a contact there,
+<ce>                    _dummy_, who will give you
+<ce>                    _reward_ septims if you can make it in time. 
+<ce>                    Goodbye and good luck.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    Ah, I had heard _questgiver_ had sent you on
+<ce>                    this errand. Glad to see you made it on time with
+<ce>                    the package. Here are your _reward_ gold. Thank you.
+<--->
+<ce>                    What a marvelous package, and it's even here on time.
+<ce>                    Quite unlike _questgiver_ to be so punctual,
+<ce>                    I assure you. Well, enjoy your _reward_ gold reward.
+<ce>                    You've earned it.
+<--->
+<ce>                    I've been expecting you and the package but I can tell
+<ce>                    you now I hadn't expected you to arrive on time. Good
+<ce>                    speed. I believe _reward_ septims was the amount agreed on?
+
+RumorsDuringQuest:   [1005]
+Nothing much is going on, as far as I know.
+<--->
+You're probably asking the wrong person. I haven't heard anything interesting.
+<--->
+I'm sure I haven't heard anything you'd care about.
+
+QuestorPostsuccess:  [1008]
+<ce>            My favorite courier! How can I help?
+
+QuestorPostfailure:  [1009]
+<ce>            Your failure to deliver my package costed me dearly. You should know that.
+
+Message: 1010
+<ce>%qdt
+_questgiver_ in ___questgiver_ hired me to
+deliver a _package_ to _dummy_ who can be
+found at the _location_ in
+__location_. _questgiver_ expects
+me to make the delivery in =timer_ days or less.
+
+Message: 1020
+<ce>                    Your inventory feels somewhat lighter. Apparently,
+<ce>                    some kind pickpocket has relieved you of some of
+<ce>                    your burden. After checking, you notice the
+<ce>                    package for _dummy_ is missing.
+<--->
+<ce>                    _dummy_ should have received the
+<ce>                    package by now. Knowing you won't get a gold piece
+<ce>                    for it, you toss it away
+
+
+QBN:
+Item _reward_ gold
+Item _package_ trinket
+
+Person _questgiver_ group Questor
+Person _dummy_ group Chemist
+
+Place _location_ remote random
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    get item _package_ 
+    place npc _dummy_ at _location_
+
+_dummyclicked_ task:
+    toting _package_ and _dummy_ clicked
+    give pc _reward_
+    end quest
+ 
+_timer_ task:
+    say 1020
+    end quest

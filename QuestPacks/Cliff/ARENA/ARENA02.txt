@@ -1,0 +1,162 @@
+Quest: ARENA02
+DisplayName: Retrieval For a Commoner
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    You have a kindly face, %ra,
+<ce>                    and I need a friend. I loaned
+<ce>                    something to someone and I need it
+<ce>                    back. Would you get it for me?
+<--->
+<ce>                    I need help, young %ra. I need
+<ce>                    someone discreet who can go get something
+<ce>                    somewhere and bring it here.
+<ce>                    Unfortunately, I cannot get the object
+<ce>                    myself. Care to help? You'll be paid
+<ce>                    accordingly.
+<--->
+<ce>                    Good %ra, if you could use some gold,
+<ce>                    hear me out. There is a certain person who
+<ce>                    has something of my liege's. Would you get
+<ce>                    it for me? You would have my gratitude and
+<ce>                    gold, as I said.
+
+RefuseQuest:  [1001]
+<ce>                    Won't even consider it, eh? To be
+<ce>                    expected, I suppose. I've always heard
+<ce>                    that your typical %ra is a lazy,
+<ce>                    stupid, stinking pile of Orc dung. No
+<ce>                    hard feelings.
+<--->
+<ce>                    I understand. Thanks anyway. And, by the
+<ce>                    way, if you tell anyone what I just told
+<ce>                    you, I'll pull your teeth out by way of
+<ce>                    your neck. Have a nice day.
+<--->
+<ce>                    Really? You won't help me? Then do me one
+<ce>                    favor: don't let anyone know what I talked
+<ce>                    to you about. Goodbye
+
+AcceptQuest:  [1002]
+<ce>                    Thank you, %pcn. My mind is much eased.
+<ce>                    You see, I loaned a book of sentimental value to
+<ce>                    to _dummy_ in __location_ and now 
+<ce>                    must have it back. I'd be happy to give you _reward_ gold
+<ce>                    for its safe return, but I must have _package_
+<ce>                    in =timer_ days or less. Good luck to you, good %ra.
+<--->
+<ce>                    %god, the good spirits must have delivered
+<ce>                    you indeed. As I said, I am supposed to get a book
+<ce>                    named _package_ from an agent of mine
+<ce>                    in __location_. Ask for _dummy_ there.
+<ce>                    If I don't have it in =timer_ days I will lose a great deal
+<ce>                    of money. I will give you _reward_ septims if you get me
+<ce>                    the book in time. I'm relying on you, %pcn,
+<ce>                    do not let me down.
+<--->
+<ce>                    You are my savior, good %ra. I loaned this book,
+<ce>                    _package_,  a few weeks ago to _dummy_
+<ce>                    in __location_, and now I've discovered my
+<ce>                    liege is returning to %cn early, in =timer_ days.
+<ce>                    I will pay you _reward_ drakes on arrival with the book.
+<ce>                    Goodbye and good luck.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    The %ra returns with my book! You don't know
+<ce>                    how nervous I was, fearful you wouldn't be able
+<ce>                    to find __location_ or get back here in time.
+<ce>                    You have certainly deserved your _reward_ gold
+<ce>                    pieces. I owe you more than you will ever know.
+<ce>                    Thank you, good %ra.
+<--->
+<ce>                    Excellent job, I knew you were the right
+<ce>                    %ra for the errand the moment I saw you
+<ce>                    in here. I wish I could give you more than these
+<ce>                    _reward_ drakes. Good luck, good adventurer,
+<ce>                    and know that someone in %cn is forever
+<ce>                    grateful to you.
+<--->
+<ce>                    I heard you had picked the book from
+<ce>                    __location_ but I must admit I feared
+<ce>                    you wouldn't get it back here on time. As
+<ce>                    promised, here are your _reward_ gold. I'm
+<ce>                    very grateful. Thank you, noble %ra.
+
+RumorsDuringQuest:   [1005]
+Sorry, I wish I had something to say but I don't.
+<--->
+Well, nothing much is going on, near as I can tell you.
+<--->
+Nothing I can say. %cn's been pretty quiet actually.
+
+QuestorPostsuccess:  [1008]
+<ce>            Good to see you, %pcf. I was just talking about you to a friend about how efficient you are.
+
+QuestorPostfailure:  [1009]
+<ce>            %oth! What do you want, %pcf? Your failure costed me dearly. You should know that.
+
+Message: 1010
+<ce>%qdt
+_questgiver_ in ___questgiver_ hired me
+to retrieve a book, _package_ from
+_dummy_ who can be found in
+__location_. _questgiver_ expects
+me to return in =timer_ days or less.
+
+Message: 1020
+<ce>                    You're here for _package_, am I right?
+<ce>                    Here it is. Tell _questgiver_
+<ce>                    I said thank you.
+<--->
+<ce>                    Here's the book that _questgiver_
+<ce>                    needs. You'd better be on your way back
+<ce>                    to %g2 now.
+<--->
+<ce>                    _questgiver_ sent you for the book?
+<ce>                    Damn, I could've used it. Well, hurry back
+<ce>                    to %g2.
+
+Message: 1030
+<ce>                    _questgiver_ should have received
+<ce>                    _package_ by now. Knowing you won't
+<ce>                    get a gold piece for it, you decide
+<ce>                    to continue on your way.
+
+
+QBN:
+Item _reward_ gold
+Item _package_ book
+
+Person _questgiver_ group Questor
+Person _dummy_ group Bookseller
+
+Place _location_ remote random
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+
+
+--	Quest start-up:
+	start timer _timer_
+	log 1010 step 0
+    place npc _dummy_ at _location_
+
+_dummyclicked_ task:
+    clicked npc _dummy_
+
+_retrieval_ task:
+    when _dummyclicked_
+    say 1020
+    get item _package_     
+ 
+ _qgclicked_ task:
+     toting _package_ and _questgiver_ clicked
+     give pc _reward_
+     end quest
+    
+_timer_ task:
+    say 1030
+    end quest

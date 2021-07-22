@@ -1,0 +1,288 @@
+Quest: ARENA06
+DisplayName: Noble Escort
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>            I bid you welcome to the city of %cn.
+<ce>            If I could, I would step from the palace myself,
+<ce>            but such is not where my duty lies. My coffers
+<ce>            are open to you should you accept my plea and
+<ce>            escort a relative for me. Tell me, do you wish to
+<ce>            know more?
+<--->
+<ce>            I have a rather urgent need for someone who can
+<ce>            escort a relative. The city coffers are not exactly
+<ce>            overflowing, but I won't be frugal about the reward
+<ce>            if you accept. Would you be interested?
+<--->
+<ce>            Do not think you are a stranger to me, %pcn.
+<ce>            You could not have picked a better time to pay a social
+<ce>            call on our city. Not only is it my favorite time of
+<ce>            the year, but I have a favor to ask of you. Don't worry,
+<ce>            I know better than to ask anything immoral of you just
+<ce>            yet. If you would escort a relative of mine, my coffers
+<ce>            are wide open to you. You're brave enough to hear more,
+<ce>            are you not?
+
+RefuseQuest:  [1001]
+<ce>                    I understand. There would be some risks in
+<ce>                    accepting my quest and that naturally makes
+<ce>                    you nervous. Very well, %ra. You will
+<ce>                    forgive me if I do not walk you to the door.
+<ce>                    Goodbye.
+<--->
+<ce>                    What a pity. I will have to find another
+<ce>                    champion. Good day, %pcn.
+<ce>                    I wish you well.
+<--->
+<ce>                    Well, I am not particularly surprised that you
+<ce>                    refuse this possible adventure, for I have
+<ce>                    heard that young %ra people like you are
+<ce>                    notoriously unambitious. I hope you are able to
+<ce>                    do something of some value elsewhere.
+<ce>                    Leave me now.
+<--->
+<ce>                    Very well, I cannot force you to accept my plea.
+<ce>                    I hope all goes well on your travels, and you
+<ce>                    return to %cn someday. Now, you may go.
+<ce>                    I will find someone else eager to help the %rt
+<ce>                    and become rich. Fare you well.
+<--->
+<ce>                    I am disappointed, but I understand that a young
+<ce>                    adventurer's schedule is hard to break. I see
+<ce>                    you are doing well now. I hope good fortune
+<ce>                    smiles upon your efforts...
+<--->
+<ce>                    I suppose I cannot talk you into it. Perhaps
+<ce>                    there is another who will accept the risks
+<ce>                    in return for wealth and fame. Farewell, %ra.
+<--->
+<ce>                    I had hoped you would be interested but there
+<ce>                    are others who would gladly welcome the chance
+<ce>                    to fill their purses. I thank you but must
+<ce>                    turn my attention to other matters. Good luck
+<ce>                    on your travels.
+<--->
+<ce>                    You would deny a pleading member of the
+<ce>                    %reg royal family a small request such
+<ce>                    as this! Away with you then, for I have
+<ce>                    more important matters to consider than
+<ce>                    some amateur %ra adventurer. Begone! 
+
+AcceptQuest:  [1002]
+<ce>            Then you shall be my champion, %pcn. My in-law, _dummy_,
+<ce>            has urgent business in __location_, business that demands
+<ce>            %g be there in =timer_ days. If you can make certain %g makes it to
+<ce>            my representative, _contact_, at __location_'s palace by
+<ce>            then, you will be paid _reward_ gold. My council believes %reg's
+<ce>            enemies will try to stop _dummy_ before %g makes it to the
+<ce>            palace, but this may or may not be true. Be careful, %ra,
+<ce>            and good luck.         
+<--->
+<ce>            I am happy to make you my champion, %pcn, but I will
+<ce>            be happier still when this business is behind us. I want you to
+<ce>            escort my in-law, _dummy_, to __location_.
+<ce>            You must deliver %g2 to the palace where a representative of mine
+<ce>            named _contact_ will be there to receive you. __location_ lies
+<ce>            less than =timer_ days riding %di from here. You must however deliver
+<ce>            _dummy_ before then, otherwise you will not be paid. Remember,
+<ce>            I'm hiring you to deliver %g2 safely and quickly, else I would escort
+<ce>            %g2 there myself. There are rumors that %reg's enemies
+<ce>            will try to stop you. Though I would not put too much trust in that,
+<ce>            be alert in any case. For taking this amount of time out of your busy
+<ce>            schedule, my representative will gladly pay you _reward_ septims
+<ce>            upon your arrival. Thank you, %ra, and good luck.
+<--->
+<ce>            Excellent, %pcn, you are brave indeed. I have a contact in
+<ce>            __location_, a little less than =timer_ days %di from here,
+<ce>            in the palace waiting for the delivery of _dummy_, my in-law.
+<ce>            I cannot say it is true though I have my suspicions that %g,
+<ce>            in alliance with %reg's enemies, plans to usurp the throne.
+<ce>            Regardless of these accusations, I need _dummy_ out of
+<ce>            court politics. It may be a hazardous journey if %g does, in
+<ce>            fact, have allies against me. Thus if you cannot get to __location_'s
+<ce>            palace in =timer_ days, my contact there, _contact_, is under
+<ce>            orders to assume my in-law is free and to avoid any repercussions. Your
+<ce>            generous payment of _reward_ septims will be forfeit. Move quickly,
+<ce>            take care of yourself, and good luck be yours.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>            Welcome to __location_'s palace. I see you have
+<ce>            _questgiver_'s in-law, _dummy_, with you.
+<ce>            It is my pleasure to offer you _reward_ gold, as
+<ce>            promised.
+<--->
+<ce>            Good day, I am glad to see the in-law of
+<ce>            _questgiver_ had such a professional escort
+<ce>            to __location_. Please accept our gratitude
+<ce>            and these _reward_ septims.
+<--->
+<ce>            What a delight to see you and _dummy_ at
+<ce>            __location_'s palace on time. Good job, %ra.
+<ce>            Here is your promised _reward_ gold.
+
+RumorsDuringQuest:   [1005]
+There's a physician of some sort in the wilds of Valenwood who found a cure for lycanthropy. Can you imagine? I didn't even know it was a problem.
+<--->
+My prophet says Summerset Isle is doomed to sink beneath the sea. He did not specify when, but it sounded like soon.
+<--->
+Well, they say a plague has been reported in some remote Summerset shore villages. My sources are dubious, so I could not vouch for the truth.
+
+RumorsPostSuccess:   [1007]
+Did you know the in-law of _questgiver_ is in ___contact_? Wish I knew why.
+<--->
+Well. Apparently, _questgiver_'s in-law is in the ___contact_. Apparently, %g's sightseeing, but some are suspicious.
+<--->
+Guess who I saw in ___contact_? _questgiver_'s in-law, _dummy_! I wonder what %g's doing there.
+<--->
+_questgiver_'s in-law was over at ___contact_'s palace a little while ago. Someone told me %g was there with a suspicious-looking %ra. Mysterious, eh?
+<--->
+What do you suppose the in-law of _questgiver_ is doing in ___contact_? Sightseeing? I don't think so, but we'll have to wait and see.
+
+QuestorPostsuccess:  [1008]
+<ce>            You escorted my in-law, %pcn. While I am grateful, I have urgent matters to attend do. Please make it quick.
+
+QuestorPostfailure:  [1009]
+<ce>            %oth! What in the Emperor's name are you doing back in %cn? I sent you to __location_ with my in-law, and I understand _dummy_ never arrived, you idiotic %ra. I must hire someone else to find %g2. Leave my sight before I do something violent.
+
+Message: 1010
+<ce>%qdt
+I am escorting _dummy_, _questgiver_'s in-law, to
+__location_'s palace. Once there, I am to meet with
+_contact_. I have =timer_ days to accomplish this.
+
+Message: 1020
+<ce>            _dummy_ says :
+<ce>            "Listen, I know my way from here.
+<ce>            Thanks for your help, %pcn."
+<ce>
+<ce>            _dummy_ hurries away.
+<--->
+<ce>            "I don't even know why I needed an
+<ce>            escort in the first place."
+<ce>
+<ce>            _dummy_ waves goodbye and leaves,
+<ce>            figuring %g can find %g3 own way.
+<--->
+<ce>            _dummy_ says %g knows the way to
+<ce>            __location_'s palace from
+<ce>            here and leaves you, heading %di.
+
+Message: 1030
+<ce>                    These fighters were obviously sent by
+<ce>                    %reg's enemies to stop you, for their
+<ce>                    family colors are borne with pride.
+<--->
+<ce>                    The group blocking your path is at the
+<ce>                    service of another. One of
+<ce>                    %reg's enemies seem the obvious
+<ce>                    master, if they truly wish for your
+<ce>                    quest to fail.
+<--->
+<ce>                    The colors borne by this hostile group
+<ce>                    are those of %reg's enemies.
+<ce>                    It would seem the rumors of their
+<ce>                    interest in aborting your quest are true.
+<--->
+<ce>                    The occasional wandering band is not an
+<ce>                    unusual sight, but one bearing the colors
+<ce>                    of %reg's enemies is strange
+<ce>                    indeed. It is evident that they really
+<ce>                    must want you dead.
+<--->
+<ce>                    You might assume this to be a chance
+<ce>                    encounter with a hostile warrior, but not
+<ce>                    one carrying the colors of
+<ce>                    %reg's enemies. The rumors of
+<ce>                    their involvment in you quest are apparently
+<ce>                    true.
+
+Message: 1040
+<ce>            Had I known that _dummy_ was capable of getting
+<ce>            to __location_ alone, I would not have wasted my
+<ce>            time with you. As you have found, %g is obviously
+<ce>            more capable than I thought. I assume you have not
+<ce>            come to ask for payment but to apologize for your
+<ce>            sloppy job escorting. Apology accepted. You may
+<ce>            now leave.
+<--->
+<ce>            My in-law is indeed in __location_. I received
+<ce>            word only a few minutes ago. So you need not worry
+<ce>            about _dummy_. I am sure you know I cannot pay you
+<ce>            for failure. Begone, %pcn.
+<--->
+<ce>            %oth! What in the Emperor's name are you doing
+<ce>            back in %cn? I sent you to __location_ with
+<ce>            my in-law, and I understand _dummy_ never
+<ce>            arrived, you idiotic %ra. I must hire someone
+<ce>            else to find %g2. Leave my sight before I do
+<ce>            something violent.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+Person _dummy_ group Resident1
+Person _contact_ group Resident4
+
+Foe _agent1_ is Warrior
+Foe _agent2_ is Knight
+Foe _agent3_ is Archer
+Foe _agent4_ is Mage
+
+Place _location_ remote palace
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _agents_ 24:00
+Clock _end_ 7.00:00
+
+
+--	Quest start-up:
+	start timer _timer_
+    start timer _agents_
+	log 1010 step 0
+    place npc _contact_ at _location_
+    add _dummy_ face
+
+_contactclicked_ task:
+    clicked npc _contact_
+
+_escort_ task:
+    when _contactclicked_ and not _timer_
+    give pc _reward_
+    end quest
+
+_agents_ task:
+    pick one of _agentsyes_ _agentsno_
+
+_agentsyes_ task:
+	create foe _agent1_ every 0 minutes 1 times with 100% success 
+    create foe _agent2_ every 0 minutes 1 times with 75% success 
+	create foe _agent3_ every 0 minutes 1 times with 50% success 
+    create foe _agent4_ every 0 minutes 1 times with 30% success 
+    say 1030
+
+_agentsno_ task:
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_qgangry_ task:
+    when _qgclicked_ and _timer_
+    say 1040
+    end quest
+
+_clearclick_ task:
+    when _qgclicked_ and not _timer_
+    clear _qgclicked_ _clearclick_  
+
+_end_ task:
+    end quest
+
+_timer_ task:
+    say 1020
+    start timer _end_

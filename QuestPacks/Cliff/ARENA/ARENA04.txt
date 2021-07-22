@@ -1,0 +1,294 @@
+Quest: ARENA04
+DisplayName: Noble Delivery
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    Greetings, %pcn, and welcome to %cn.
+<ce>                    If you have come looking for fame and fortune,
+<ce>                    I am looking for someone to deliver a package.
+<ce>                    Can you lend a hand?
+<--->
+<ce>                    Yes, I heard of you. You're undoubtedly trying
+<ce>                    to make a few gold pieces for yourself.
+<ce>                    Normally, I would dismiss you but right now
+<ce>                    %reg could use someone of your type to deliver
+<ce>                    an important parcel for us.
+<--->
+<ce>                    Ah, you're %pcn. I will speak with you, for my
+<ce>                    city needs help. You must deliver something important.
+<ce>                    I have heard you had sufficient experience.
+<ce>                    Are you interested?
+
+RefuseQuest:  [1001]
+<ce>                    I understand. There would be some risks in
+<ce>                    accepting my quest and that naturally makes
+<ce>                    you nervous. Very well, %ra. You will
+<ce>                    forgive me if I do not walk you to the door.
+<ce>                    Goodbye.
+<--->
+<ce>                    What a pity. I will have to find another
+<ce>                    champion. Good day, %pcn.
+<ce>                    I wish you well.
+<--->
+<ce>                    Well, I am not particularly surprised that you
+<ce>                    refuse this possible adventure, for I have
+<ce>                    heard that young %ra people like you are
+<ce>                    notoriously unambitious. I hope you are able to
+<ce>                    do something of some value elsewhere.
+<ce>                    Leave me now.
+<--->
+<ce>                    Very well, I cannot force you to accept my plea.
+<ce>                    I hope all goes well on your travels, and you
+<ce>                    return to %cn someday. Now, you may go.
+<ce>                    I will find someone else eager to help the %rt
+<ce>                    and become rich. Fare you well.
+<--->
+<ce>                    I am disappointed, but I understand that a young
+<ce>                    adventurer's schedule is hard to break. I see
+<ce>                    you are doing well now. I hope good fortune
+<ce>                    smiles upon your efforts...
+<--->
+<ce>                    I suppose I cannot talk you into it. Perhaps
+<ce>                    there is another who will accept the risks
+<ce>                    in return for wealth and fame. Farewell, %ra.
+<--->
+<ce>                    I had hoped you would be interested but there
+<ce>                    are others who would gladly welcome the chance
+<ce>                    to fill their purses. I thank you but must
+<ce>                    turn my attention to other matters. Good luck
+<ce>                    on your travels.
+<--->
+<ce>                    You would deny a pleading member of the
+<ce>                    %reg royal family a small request such
+<ce>                    as this! Away with you then, for I have
+<ce>                    more important matters to consider than
+<ce>                    some amateur %ra adventurer. Begone! 
+
+AcceptQuest:  [1002]
+<ce>                    Then you shall be my champion, %pcn. Take this
+<ce>                    sack to _location_ in __location_ %di of
+<ce>                    %cn by =timer_ days. If you do, I can promise you
+<ce>                    _reward_ septims from our allies' representative there.
+<ce>                    I believe enemies of %reg will try to stop this
+<ce>                    shipment, but my council believes otherwise. We agreed
+<ce>                    that you should be ready for any encounter. It may be
+<ce>                    very dangerous indeed, but you will be _reward_ septims
+<ce>                    richer if you reach _location_ before =timer_ days
+<ce>                    have passed. Be careful, %ra, and good luck.
+<--->
+<ce>                    I am happy to make you my champion, %pcn,
+<ce>                    but I will be happier still when this business is behind
+<ce>                    us. Deliver this sack to _location_ in __location_.
+<ce>                    A representative of our allies, a =dummy_
+<ce>                    named _dummy_, will be there to reward you with
+<ce>                    _reward_ septims. for your trouble. __location_
+<ce>                    lies less than =timer_ days journey %di from here. You
+<ce>                    must get this vital information to our allies' contact in
+<ce>                    _location_ in that time, or it will be worthless.
+<ce>                    There are rumors that agents of %reg's enemies
+<ce>                    will try to stop you. I would not put much faith in that,
+<ce>                    for my enemies are many. Be alert at all times for anyone.
+<ce>                    Thank you, %ra, and good luck.
+<--->
+<ce>                    Excellent, %pcn, you are brave indeed. I need you to
+<ce>                    deliver this sack to our allies' representative, _dummy_,
+<ce>                    in __location_, a city not even =timer_ days journey
+<ce>                    %di from here. You must get the _package_ there in
+<ce>                    time for it to help our allies. My council believes
+<ce>                    that %reg's rivals will stand between you and
+<ce>                    our allies' contact. I cannot be sure this is true, but I
+<ce>                    would advise vigilance nevertheless. If you can make this
+<ce>                    delivery to _location_ in __location_
+<ce>                    on time, our allies will pay you _reward_ gold. I and all
+<ce>                    %cn will be relying on you. Move quickly, take care
+<ce>                    of yourself, and good luck be yours.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    You must be %pcn, I am from your liege's allies,
+<ce>                    sent to pick up the package from you. I'm glad
+<ce>                    you found _location_ on time. Here is
+<ce>                    your _reward_ gold pieces award.
+<--->
+<ce>                    My client, the council of your %rt's allies
+<ce>                    is very anxious to get their hands on that
+<ce>                    package, and they will be so pleased that you
+<ce>                    delivered it on time. Please, accept these
+<ce>                    _reward_ gold as a humble token of our esteem.
+<ce>                    Now, I must be off. Goodbye.
+<--->
+<ce>                    Ah, we were afraid you wouldn't be able to find
+<ce>                    _location_ in time. My client will be
+<ce>                    so relieved to get this package, and you will
+<ce>                    not be forgotten, my good %ra. Here's
+<ce>                    _reward_ gold pieces, as promised. Thank you
+<ce>                    and goodbye.
+
+RumorsDuringQuest:   [1005]
+I'll ask around, but I haven't heard anything lately that would interest you.
+<--->
+I do not want to sound paranoid, but I am convinced that our %t has been possessed by the daedra.
+<--->
+This city is crawling with undead after dark. Be armed at all times!
+<--->
+I do not have any proof of this, but you must believe me. I know the %t is an imposter. Not only that, %rn's a cannibal too.
+
+RumorsPostSuccess:   [1007]
+Well, I heard %reg's allies recently received a package from _questgiver_. Very mysterious, indeed.
+<--->
+Some of us are trying to make sense of a certain shipment that the %rt's allies received recently. A few are saying it came from a representative in __location_, but we all know that's impossible.
+<--->
+The council of one of %reg's allies is furious because it turns out they received and even paid for a forged relic from the Lord of ___questgiver_. I'd hate to see the deliverer once they find him.
+<--->
+The council of one of %reg's allies is furious because it turns out they received and even paid for a forged relic from the Lady of ___questgiver_. I'd hate to see the deliverer once they find him.
+<--->
+The Baron of ___questgiver_ apparently sent a package to one of his allies in __location_. Nobody, except the its representative obviously, knows why, and most everyone is concerned.
+<--->
+The Baroness of ___questgiver_ apparently sent a package to one of her allies in __location_. Nobody, except the its representative obviously, knows why, and most everyone is concerned.
+<--->
+Apparently some %ra smuggler managed to get some contraband into __location_ from ___questgiver_, into the hands of one of %reg's allies. I sure hope they work on security in this city.
+
+QuestorPostsuccess:  [1008]
+<ce>            Yes, %pcn. I remember your service to the crown of %reg. Our allies send their thanks.
+
+QuestorPostfailure:  [1009]
+
+Message: 1010
+<ce>%qdt
+I have promised _questgiver_ in ___questgiver_ to
+deliver a small sack to _dummy_, a
+representative of %reg's allies in
+__location_. My contact is in
+_location_. _questgiver_ believes
+agents working for %g3 rivals may try to stop me.
+I have =timer_ days to deliver the item.
+
+Message: 1020
+<ce>                    Your inventory feels somewhat lighter. Apparently,
+<ce>                    some kind pickpocket has relieved you of some of
+<ce>                    your burden. After checking, you notice the package
+<ce>                    for _dummy_ is missing.
+<--->
+<ce>                    _dummy_ should have received the package
+<ce>                    by now. Knowing you won't get a gold piece for
+<ce>                    it, you toss it away.
+
+Message: 1030
+<ce>                    These fighters were obviously sent by
+<ce>                    %reg's enemies to stop you, for their
+<ce>                    family colors are borne with pride.
+<--->
+<ce>                    The group blocking your path is at the
+<ce>                    service of another. One of
+<ce>                    %reg's enemies seem the obvious
+<ce>                    master, if they truly wish for your
+<ce>                    quest to fail.
+<--->
+<ce>                    The colors borne by this hostile group
+<ce>                    are those of %reg's enemies.
+<ce>                    It would seem the rumors of their
+<ce>                    interest in aborting your quest are true.
+<--->
+<ce>                    The occasional wandering band is not an
+<ce>                    unusual sight, but one bearing the colors
+<ce>                    of %reg's enemies is strange
+<ce>                    indeed. It is evident that they really
+<ce>                    must want you dead.
+<--->
+<ce>                    You might assume this to be a chance
+<ce>                    encounter with a hostile warrior, but not
+<ce>                    one carrying the colors of
+<ce>                    %reg's enemies. The rumors of
+<ce>                    their involvment in you quest are apparently
+<ce>                    true.
+
+Message: 1040
+<ce>                    I received word from our allies that there
+<ce>                    was no shipment of that package. It was
+<ce>                    extremely embarrassing for me. They thought
+<ce>                    I would choose someone capable of such a
+<ce>                    delivery. It shows a bit of nerve for you
+<ce>                    to come back to my court, unsuccessful in
+<ce>                    your quest. You are not expecting payment
+<ce>                    from me surely? Now, please go. Leave my
+<ce>                    sight.
+<--->
+<ce>                    Your timing could not be better. Our allies'
+<ce>                    messenger just informed me that you never
+<ce>                    managed to get the package to _dummy_.
+<ce>                    I wish you had told me you were not skilled
+<ce>                    enough to complete the quest before you
+<ce>                    accepted it. Begone, cretinous orc-vomit.
+<--->
+<ce>                    I have to say I admire your courage, %ra.
+<ce>                    Not many would return to the palace where they
+<ce>                    received instructions they could not follow.
+<ce>                    Yes, I have already heard that you were not
+<ce>                    able to get my package to _dummy_.
+<ce>                    Ah well, it was probably too much for someone
+<ce>                    with your limited experience. You may leave
+<ce>                    in dishonor, but in peace.
+
+QBN:
+Item _reward_ gold
+Item _package_ small_sack
+
+Person _questgiver_ group Questor
+Person _dummy_ group Local_4.0
+
+Foe _agent1_ is Warrior
+Foe _agent2_ is Knight
+Foe _agent3_ is Archer
+Foe _agent4_ is Mage
+
+Place _location_ remote tavern
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _agents_ 24:00
+Clock _end_ 7.00:00
+
+--	Quest start-up:
+	start timer _timer_
+    start timer _agents_
+	log 1010 step 0
+    get item _package_ 
+    place npc _dummy_ at _location_
+
+_dummyclicked_ task:
+    toting _package_ and _dummy_ clicked
+    give pc _reward_
+    end quest
+
+_agents_ task:
+    pick one of _agentsyes_ _agentsno_
+
+_agentsyes_ task:
+	create foe _agent1_ every 0 minutes 1 times with 100% success 
+    create foe _agent2_ every 0 minutes 1 times with 75% success 
+	create foe _agent3_ every 0 minutes 1 times with 50% success 
+    create foe _agent4_ every 0 minutes 1 times with 30% success 
+    say 1030
+
+_agentsno_ task:
+
+_qgclicked_ task:
+    clicked npc _questgiver_
+
+_qgangry_ task:
+    when _qgclicked_ and _timer_
+    say 1040
+    end quest
+
+_timer_ task:
+    say 1020
+    start timer _end_
+
+_clearclick_ task:
+    when _qgclicked_ and not _timer_
+    clear _qgclicked_ _clearclick_   
+
+_end_ task:
+    end quest

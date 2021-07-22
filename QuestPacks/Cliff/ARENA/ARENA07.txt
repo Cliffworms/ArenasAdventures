@@ -1,0 +1,321 @@
+Quest: ARENA07
+DisplayName: Monster Slaying
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                    Good day to you. I need your assistance.
+<ce>                    Would you slay a monster for me?
+<--->
+<ce>                    I am looking for someone who would slay
+<ce>                    a beast for our %rt. Nothing could
+<ce>                    be simpler. Give me your allegiance on
+<ce>                    this matter and I will make you a rich
+<ce>                    person. Perhaps you would like me to
+<ce>                    describe the situation in more depth?
+<--->
+<ce>                    Welcome, %pcn to %cn. It is an
+<ce>                    opportune moment for you to arrive, for I was
+<ce>                    just telling my advisors last night I need
+<ce>                    someone to slay a monster for me. You will,
+<ce>                    of course, be generously rewarded. Shall I
+<ce>                    tell you more about it?
+
+
+RefuseQuest:  [1001]
+<ce>                    I understand. There would be some risks in
+<ce>                    accepting my quest and that naturally makes
+<ce>                    you nervous. Very well, %ra. You will
+<ce>                    forgive me if I do not walk you to the door.
+<ce>                    Goodbye.
+<--->
+<ce>                    What a pity. I will have to find another
+<ce>                    champion. Good day, %pcn.
+<ce>                    I wish you well.
+<--->
+<ce>                    Well, I am not particularly surprised that you
+<ce>                    refuse this possible adventure, for I have
+<ce>                    heard that young %ra people like you are
+<ce>                    notoriously unambitious. I hope you are able to
+<ce>                    do something of some value elsewhere.
+<ce>                    Leave me now.
+<--->
+<ce>                    Very well, I cannot force you to accept my plea.
+<ce>                    I hope all goes well on your travels, and you
+<ce>                    return to %cn someday. Now, you may go.
+<ce>                    I will find someone else eager to help the %rt
+<ce>                    and become rich. Fare you well.
+<--->
+<ce>                    I am disappointed, but I understand that a young
+<ce>                    adventurer's schedule is hard to break. I see
+<ce>                    you are doing well now. I hope good fortune
+<ce>                    smiles upon your efforts...
+<--->
+<ce>                    I suppose I cannot talk you into it. Perhaps
+<ce>                    there is another who will accept the risks
+<ce>                    in return for wealth and fame. Farewell, %ra.
+<--->
+<ce>                    I had hoped you would be interested but there
+<ce>                    are others who would gladly welcome the chance
+<ce>                    to fill their purses. I thank you but must
+<ce>                    turn my attention to other matters. Good luck
+<ce>                    on your travels.
+<--->
+<ce>                    You would deny a pleading member of the
+<ce>                    %reg royal family a small request such
+<ce>                    as this! Away with you then, for I have
+<ce>                    more important matters to consider than
+<ce>                    some amateur %ra adventurer. Begone! 
+
+AcceptQuest:  [1002]
+<ce>                    Then you shall be my champion, %pcn. My birthday
+<ce>                    is coming in =timer_ days, and, as if in mockery,
+<ce>                    =monster1_ has come to my lands to feed. It has
+<ce>                    slain all the hunters I have sent after it, but
+<ce>                    word has come that its lair is known as
+<ce>                    ___location_. You must go there and kill it
+<ce>                    for me. If =monster1_ is alive to devour my people
+<ce>                    come my birthday, the cost in human life and the
+<ce>                    loss of holiday revenue will be astronomical. I
+<ce>                    offer you _reward_ gold for the death of that beast.
+<ce>                    Be careful, %ra, and good luck.   
+<--->
+<ce>                    I am happy to make you my champion, %pcn, but
+<ce>                    I will be happier still when this business is behind
+<ce>                    us. =monster1_ has fallen upon my lands like a plague.
+<ce>                    In the past, =monster1_ has has terrorized the largest
+<ce>                    City-states and the humblest villages in the province,
+<ce>                    but I want its life to end here, in its lair known as
+<ce>                    ___location_. Kill it in =timer_ days,
+<ce>                    or it will feed on the people celebrating my annual
+<ce>                    festival. Imagine the political embarrassment. For a
+<ce>                    reward of _reward_ gold, we shall see if you are you
+<ce>                    strong enough to challenge =monster1_.
+<ce>                    Thank you, %ra, and good luck.
+<--->
+<ce>                    Excellent, %pcn, you are brave indeed. My lands are
+<ce>                    being stalked by a deadly foe, one which has evaded my hunters
+<ce>                    for weeks. Locals have called it =monster1_ and its lair is in
+<ce>                    ___location_. I will pay you _reward_ gold if you would
+<ce>                    find it and kill it before it does anymore harm to my people.
+<ce>                    The monster must be dead before =timer_ days, for I hold my
+<ce>                    cousin's wedding then and would have people not fear to come
+<ce>                    out of their homes. Move quickly, take care of yourself, and
+<ce>                    good luck be yours, %ra.
+
+QuestFail:  [1003]
+<ce>            
+
+QuestComplete:  [1004]
+<ce>                    Is =monster1_ dead at last? No other city in the region was
+<ce>                    able to defeat this monster, but thanks to you, %cn will
+<ce>                    be called the city that slew =monster1_. You have certainly
+<ce>                    earned your reward, good %ra. Take it and go in peace.
+<--->
+<ce>                    You do not even have to tell me that the fearsome monster is
+<ce>                    dead. Word has spread quickly. Already there are ballads
+<ce>                    being written about how the brave %ra slew =monster1_,
+<ce>                    scourge of %cn. Of course, fame alone cannot keep you fed,
+<ce>                    so here is the _reward_ gold pieces I promised you. Good luck
+<ce>                    and come back to our city anytime.
+<--->
+<ce>                    Even before you arrived, I heard from the peasants outside
+<ce>                    that =monster1_ was dead, slain by a valiant %ra. You
+<ce>                    have earned your septims and a place in the history of
+<ce>                    %cn, if not the whole region. The %rt and people of
+<ce>                    %cn thanks you.
+
+RumorsDuringQuest:   [1005]
+Rumor has it there is a plague in Skyrim.
+<--->
+My aunt just returned from a little village on the edge of Elsweyr that has been almost completely ravaged by a plague.
+<--->
+The prophet I see tells me that Hammerfell will be decimated by the plague early next year.
+
+RumorsPostSuccess:   [1007]
+Did you hear that some %ra kid killed the beast known as =monster1_? Makes you think anything is possible, doesn't it?
+<--->
+That monster that plagued ___questgiver_ is finally dead. We should be dancing in the streets!
+<--->
+The best huntsmen of the %t couldn't slay =monster1_, so _questgiver_ hired someone who I hear is half %ra and half giant and now the monster's dead! Talk about fighting fire with fire!
+<--->
+Have you heard about the %ra that killed the monster, =monster1_? Apparently this %ra was really a demigod, and sprouted wings and flew away! I have it on good authority.
+<--->
+Everyone in town in celebrating the death of =monster1_. We owe it all to a mysterious %ra who didn't even leave a name. Well, we'll never forget %pg2.
+
+QuestorPostsuccess:  [1008]
+<ce>            =monster1_'s slayer! The roads in %cn's area have been safer since your brave deed.
+
+QuestorPostfailure:  [1009]
+<ce>            I did not require you to bring me the head of =monster1_: I would have originally believed that the monster was dead. But I only just heard that a farmer right outside my city was murdered by =monster1_. I must send someone else to rid my lands from this menace. Leave me now.
+
+Message: 1010
+<ce>%qdt
+I am on a quest to slay the dread _monster1_ =monster1_
+for _questgiver_ of ___questgiver_. =monster1_'s lair is
+said to be ___location_, and I must have killed
+the beast in less than =timer_ days.
+
+Message: 1011
+<ce>%qdt
+I am on a quest to slay the dread _monster2_ =monster1_
+for _questgiver_ of ___questgiver_. =monster1_'s lair is
+said to be ___location_, and I must have killed
+the beast in less than =timer_ days.
+
+Message: 1012
+<ce>%qdt
+I am on a quest to slay the dread _monster3_ =monster1_
+for _questgiver_ of ___questgiver_. =monster1_'s lair is
+said to be ___location_, and I must have killed
+the beast in less than =timer_ days.
+
+Message: 1013
+<ce>%qdt
+I am on a quest to slay the dread _monster4_ =monster1_
+for _questgiver_ of ___questgiver_. =monster1_'s lair is
+said to be ___location_, and I must have killed
+the beast in less than =timer_ days.
+
+Message: 1014
+<ce>%qdt
+I am on a quest to slay the dread _monster5_ =monster1_
+for _questgiver_ of ___questgiver_. =monster1_'s lair is
+said to be ___location_, and I must have killed
+the beast in less than =timer_ days.
+
+Message: 1020
+<ce>            Oh, I'm sorry. =monster1_ is a _monster1_. I believe that
+<ce>            that slipped my mind. Good luck.
+
+Message: 1021
+<ce>            Oh, I'm sorry. =monster1_ is a _monster2_. I believe that
+<ce>            that slipped my mind. Good luck.
+
+Message: 1022
+<ce>            Oh, I'm sorry. =monster1_ is a _monster3_. I believe that
+<ce>            that slipped my mind. Good luck.
+
+Message: 1023
+<ce>            Oh, I'm sorry. =monster1_ is a _monster4_. I believe that
+<ce>            that slipped my mind. Good luck.
+
+Message: 1024
+<ce>            Oh, I'm sorry. =monster1_ is a _monster5_. I believe that
+<ce>            that slipped my mind. Good luck.
+
+Message: 1030
+<ce>            =monster1_, the terrible _monster1_ is dead.
+
+Message: 1031
+<ce>            =monster1_, the terrible _monster2_ is dead.
+
+Message: 1032
+<ce>            =monster1_, the terrible _monster3_ is dead.
+
+Message: 1033
+<ce>            =monster1_, the terrible _monster4_ is dead.
+
+Message: 1034
+<ce>            =monster1_, the terrible _monster5_ is dead.
+
+Message: 1040
+<ce>            It has been more than =timer_ days since you were
+<ce>            sent to hunt down =monster1_. By now, it must have
+<ce>            made its home elsewhere, continuing its carnage
+<ce>            in another %reg city.
+
+Message: 1050
+<ce>            I did not require you to bring me the head of =monster1_:
+<ce>            I would have originally believed that the monster was dead.
+<ce>            But I only just heard that a farmer right outside my city
+<ce>            was murdered by =monster1_. I must send someone else to rid
+<ce>            my lands from this menace. Leave me now.
+<--->
+<ce>            I told you to slay the beast =monster1_ in =timer_ days if you recall.
+<ce>            I had expected more from an experienced %ra like you than my own
+<ce>            hunters. It would appears I was wrong. Begone, you will get no reward
+<ce>            from me.
+<--->
+<ce>            Well, =monster1_ did not attack my celebration as expected, but only
+<ce>            because it moved elsewhere in the region. As for you, you couldn't
+<ce>            slay a goblin grub. Do not expect any reward from me. Off with you,
+<ce>            %ra.
+
+QBN:
+Item _reward_ gold
+
+Person _questgiver_ group Questor
+
+Foe _monster1_ is Gargoyle
+Foe _monster2_ is Giant
+Foe _monster3_ is Dragonling
+Foe _monster4_ is Wereboar
+Foe _monster5_ is Mummy
+
+Place _location_ remote dungeon6
+
+Clock _timer_ 00:00 0 flag 17 range 0 2
+Clock _end_ 7.00:00
+
+--	Quest start-up:
+	start timer _timer_
+    reveal _location_
+    pick one of _type1_ _type2_ _type3_ _type4_ _type5_
+
+
+_type1_ task:
+    say 1020
+    log 1010 step 0
+    place foe _monster1_ at _location_
+
+_type2_ task:
+    say 1021
+    log 1011 step 0
+    place foe _monster2_ at _location_
+
+ _type3_ task:
+    say 1022
+    log 1012 step 0
+    place foe _monster3_ at _location_
+
+ _type4_ task:
+    say 1023
+    log 1013 step 0
+    place foe _monster4_ at _location_
+
+ _type5_ task:
+    say 1024
+    log 1014 step 0
+    place foe _monster5_ at _location_
+
+_slain_ task:
+    killed 1 _monster1_ saying 1030
+    killed 1 _monster2_ saying 1031
+    killed 1 _monster3_ saying 1032
+    killed 1 _monster4_ saying 1033
+    killed 1 _monster5_ saying 1034
+
+_qgclicked_ task:
+    clicked npc _questgiver_ 
+
+_success_ task:
+    when _qgclicked_ and _slain_ and not _timer_
+    give pc _reward_
+    end quest
+
+_qgangry_ task:
+    when _qgclicked_ and _timer_ and not _success_
+    say 1050
+    end quest
+
+_clearclick_ task:
+    when _qgclicked_ and not _slain_ and not _timer_
+    clear _qgclicked_ _clearclick_     
+
+_timer_ task:
+    say 1040
+    start timer _end_
+
+_end_ task:
+    end quest

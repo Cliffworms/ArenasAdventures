@@ -1,0 +1,20 @@
+-- Cliffworms Arena quest pack list
+
+-- name:        filename of QRC txt file
+-- group:       guild group from FactionFile.GuildGroups enum, or social group from FactionFile.SocialGroups enum
+-- membership:  N=non-member, M=member, P=prospect, T=Akatosh, A=Arkay, D=Dibella, J=Julianos, K=Kynareth, R=Mara, S=Stendarr, Z=Zenithar
+-- minReq:      minimum requirement to be offered the quest: (val < 10) = guild rank / player level, or (val >= 10) = min reputation
+-- flag:        0 = nothing, X = adult/nudity, 1 = one time quest
+-- notes:
+
+schema: *name, group, membership, minReq, flag, notes
+
+ARENA01, Commoners, N, 0, 0, Delivery - Commoners
+ARENA02, Commoners, N, 0, 0, Retrieval - Commoners
+ARENA03, Commoners, N, 0, 0, Escort - Commoners
+ARENA04, Nobility, N, 0, 0, Delivery - Nobility
+ARENA05, Nobility, N, 0, 0, Retrieval - Nobility
+ARENA06, Nobility, N, 0, 5, Escort - Nobility
+ARENA07, Nobility, N, 0, 10, Monster Slaying - Nobility
+ARENA08, Nobility, N, 0, 10, Capture Criminal - Nobility
+ARENA09, Nobility, N, 0, 10, Rescue Relative - Nobility
